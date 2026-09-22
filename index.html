@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE RING — Digital Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="zero-screen" aria-hidden="true">
+    <div id="zero-word">ZERO</div>
+    <div id="zero-sub">the archive is preparing itself</div>
+  </div>
+
+  <div id="fugue" class="overlay hidden" aria-hidden="true">
+    <div id="fugue-text">A Fugue.</div>
+  </div>
+
+  <header class="site-header">
+    <div>
+      <div class="eyebrow">THE RING / DIGITAL ARCHIVE</div>
+      <h1>THE GALLERY</h1>
+    </div>
+    <div class="header-meta">
+      <span>ARCHIVE STATUS: <b id="archive-status">STABLE</b></span>
+      <span>INDEX <b>01</b></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="intro-lead">An accessible record of the artistic Notions maintained within the Ring.</p>
+      <p class="intro-small">Select a Gallery to view its associated materials. Some Galleries may be unavailable during routine maintenance.</p>
+    </section>
+
+    <section id="gallery-grid" class="gallery-grid"></section>
+
+    <section class="archive-note">
+      <span>NOTICE</span>
+      <p>This archive is intended for educational and recreational use by Patrons of the Ring. If a record appears incomplete, please contact Corridor Reception.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>THE RING</span>
+    <span id="footer-zero" class="clickable">0</span>
+    <span>ARCHIVE TERMINAL</span>
+  </footer>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop"></div>
+    <article class="document">
+      <button id="modal-close" class="close" aria-label="Close">×</button>
+      <div id="document-content"></div>
+    </article>
+  </div>
+
+  <div id="secret-modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop"></div>
+    <article class="document secret-document">
+      <button id="secret-close" class="close" aria-label="Close">×</button>
+      <div id="secret-content"></div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
